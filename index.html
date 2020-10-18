@@ -8,6 +8,11 @@
   <meta name="author" content="Markus Bjorklund">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function () {
+      $("#progress").load("rdr2.txt");
+    });
+  </script>
 </head>
 
 <body>
@@ -20,7 +25,9 @@
     <p>I'm enjoying my music on vinyl and like things that last.</p>
     <p>I'm driving and camping in a retro Westfalia Ford Nugget.</p>
     <p>I'm studying software engineering at Centria University of Applied Sciences.</p>
-    <p>I'm also a casual PC gamer and am now 35 percent done with RDR2.</p>
+    <p>I'm also a casual PC gamer and am
+    <div id="progress">currently playing RDR2.</div>
+    </p>
   </div>
   <div class="w3-container w3-padding-12 w3-center w3-opacity w3-xxlarge">
     <a href="https://www.linkedin.com/in/markus-bjorklund-08a90a1a0/"><i
