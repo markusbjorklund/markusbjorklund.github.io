@@ -2,13 +2,13 @@
 function automode() {
   let currentTime = new Date().getHours();
   if (0 <= currentTime && currentTime < 8) {
-    document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
   }
   if (8 <= currentTime && currentTime < 20) {
-    document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+    document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
   }
   if (20 <= currentTime && currentTime < 24) {
-    document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+    document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
   }
 }
 
