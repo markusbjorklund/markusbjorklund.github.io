@@ -1,8 +1,0 @@
-img {
-  opacity: 0.6;
-}
-
-img:hover {
-  opacity: 1;
-  cursor: none;
-}

@@ -1,0 +1,9 @@
+@import "https://www.w3schools.com/w3css/4/w3.css";
+body {
+  color: white;
+  background-color: black;
+}
+
+img {
+  filter: grayscale(100%);
+}

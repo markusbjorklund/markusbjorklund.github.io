@@ -1,8 +1,18 @@
-// dark side
-function darkmode() {
-  const body = document.body; body.classList.toggle("w3-black");
-  const img = document.getElementsByTagName("img")[0]; img.classList.toggle("w3-grayscale-max");
-};
+// auto darkmode
+function automode() {
+  let currentTime = new Date().getHours();
+  if (0 <= currentTime && currentTime < 8) {
+    document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+  }
+  if (8 <= currentTime && currentTime < 20) {
+    document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+  }
+  if (20 <= currentTime && currentTime < 24) {
+    document.write("<link rel='stylesheet' href='night.css' type='text/css'>");
+  }
+}
+
+automode();
 
 // custom message
 let originalPageTitle = document.title;
@@ -16,11 +26,3 @@ $(document).on('visibilitychange', function (e) {
   clearTimeout(changeTitleTimeout);
   changeTitleTimeout = setTimeout(changeTitle, 200);
 });
-
-// no pointers mousing on my face
-const head = document.getElementsByTagName('HEAD')[0];
-const link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = 'style.css';
-head.appendChild(link);  
