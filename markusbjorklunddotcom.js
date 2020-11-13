@@ -9,7 +9,7 @@ let originalPageTitle = document.title;
 let changeTitleTimeout;
 
 function changeTitle() {
-  document.title = document.hidden ? "Get back here you filthy animal" : originalPageTitle;
+  document.title = document.hidden ? "Hasta la vista, baby" : originalPageTitle;
 }
 
 $(document).on('visibilitychange', function (e) {
