@@ -18,7 +18,7 @@ let originalPageTitle = document.title;
 let changeTitleTimeout;
 
 const changeTitle = () => {
-  document.title = document.hidden ? "My precious... tab" : originalPageTitle;
+  document.title = document.hidden ? "¯\\\_(ツ)_/¯" : originalPageTitle;
 }
 
 $(document).on('visibilitychange', function (e) {
