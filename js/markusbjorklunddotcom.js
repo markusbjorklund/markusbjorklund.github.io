@@ -4,10 +4,10 @@ const schedule= () => {
   if (0 <= currentTime && currentTime < 8) {
     document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
   }
-  if (8 <= currentTime && currentTime < 19) {
+  if (8 <= currentTime && currentTime < 18) {
     document.write("<link rel='stylesheet' href='css/day.css' type='text/css'>");
   }
-  if (19 <= currentTime && currentTime < 24) {
+  if (18 <= currentTime && currentTime < 24) {
     document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
   }
 }
