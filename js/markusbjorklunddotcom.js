@@ -27,7 +27,7 @@ $(document).on('visibilitychange', function (e) {
 });
 
 // get current age
-function getAge(dateString) {
+const getAge= (dateString) => {
   let today = new Date();
   let birthDate = new Date(dateString);
   let age = today.getFullYear() - birthDate.getFullYear();
