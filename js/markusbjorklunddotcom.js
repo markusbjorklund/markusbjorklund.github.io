@@ -1,4 +1,4 @@
-// auto darkmode and lightmode
+/*// auto darkmode and lightmode
 const schedule= () => {
   let currentTime = new Date().getHours();
   if (0 <= currentTime && currentTime < 8) {
@@ -12,6 +12,7 @@ const schedule= () => {
   }
 }
 schedule();
+*/
 
 // custom message on inactive tab
 let originalPageTitle = document.title;
